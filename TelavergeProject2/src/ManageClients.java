@@ -58,7 +58,7 @@ public class ManageClients implements Runnable{
         broadCastMessage("Client ["+clientName+"] Exited From the Group.");
         Server.groups.get(groupName).remove(clientIndex);
     }
-    public  void  closeAll(){       //All the Connections Will be Closed Through this Method.
+    public void closeAll(){       //All the Connections Will be Closed Through this Method.
         try {
             s.close();
             dataInputStream.close();
